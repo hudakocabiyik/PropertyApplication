@@ -134,6 +134,5 @@ class PropertyService {
     public double getVillaAvgArea() {
         double totalArea = 0;
         for (Villa villa : getVillas()) {
-            totalArea ++;
-        }
-    return getVillaAvgArea();}}
+            totalArea += villa.getArea();}
+    return totalArea/ getVillas().size();}}
